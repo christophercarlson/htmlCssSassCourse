@@ -4,18 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/cssSandbox/css/style.css">
   <title>Implementing css</title>
 </head>
+
+<style>
+  h2 {
+    color: green
+      /* color is the property, green is the value */
+  }
+
+  /* . is for classes */
+  .green-heading {
+    color: green
+  }
+
+  /* # is for id  */
+  #yellow-heading {
+    color: yellow
+  }
+</style>
 
 <body>
 
   <!-- Three ways to implement css -->
   <!-- 1. Inline css -->
+  <!-- 2. internal style sheet. -->
+  <!-- external css sheet -->
 
   <h1 style="color: red"> Heading one </h1>
-
   <h2>Heading two</h2>
   <h3>Heading three</h3>
+
+  <div>
+    <h4 id="yellow-heading">Welcome</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Distinctio maiores velit modi blanditiis dolorum consequatur iure quod tempore.
+      Deserunt, voluptatibus? Soluta sequi explicabo nam harum culpa facere officiis quos eum!
+    </p>
+  </div>
+
+  <div>
+    <h4 class="green-heading">About</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ullam voluptates cupiditate esse commodi ut libero laboriosam.
+      voluptatibus neque labore tempore, eius vero praesentium, reprehenderit
+      maiores aliquid tempora blanditiis ipsam inventore?
+    </p>
+  </div>
+
 </body>
 
 </html>
