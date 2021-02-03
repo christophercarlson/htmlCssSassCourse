@@ -4,11 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css style sheet -->
   <link rel="stylesheet" href="/cssSandbox/css/style.css">
+  <!-- import for a font from google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
   <title>Implementing css</title>
 </head>
 
 <style>
+  /* element or tag selector */
+  body {
+    background-color: yellowgreen;
+    /* It is good practice to check if the font you want to use is the web safe font list,
+    if it is no we need to import the fonts file from the web */
+
+    /* this is called a font stack, where if one wont work it will default to the next one */
+    font-family: 'Potta One', cursive;
+    line-height: 1.6em;
+
+    /* em multiplier of font size of parent element */
+    /* rem multiplier of font size of root element which is 16px */
+
+  }
+
   h2 {
     color: green
       /* color is the property, green is the value */
@@ -23,6 +42,23 @@
   #yellow-heading {
     color: yellow
   }
+
+  /* We can also have multiple selectors  */
+  #paragraph,
+  #yellow-heading {
+    background-color: teal;
+  }
+
+  /* nested selector */
+  #paragraph p {
+    font-size: 23px;
+  }
+
+  /* another example of nesting */
+  #paragraph p span {
+    font-weight: bold;
+    color: violet;
+  }
 </style>
 
 <body>
@@ -30,17 +66,20 @@
   <!-- Three ways to implement css -->
   <!-- 1. Inline css -->
   <!-- 2. internal style sheet. -->
-  <!-- external css sheet -->
+  <!-- 3. external css sheet -->
+
+  <!-- We can also have multiple selectors -->
+
 
   <h1 style="color: red"> Heading one </h1>
   <h2>Heading two</h2>
   <h3>Heading three</h3>
 
-  <div>
+  <div id="paragraph">
     <h4 id="yellow-heading">Welcome</h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Distinctio maiores velit modi blanditiis dolorum consequatur iure quod tempore.
-      Deserunt, voluptatibus? Soluta sequi explicabo nam harum culpa facere officiis quos eum!
+      Distinctio maiores velit <span> modi blanditiis dolorum consequatur iure quod tempore.
+        Deserunt, voluptatibus? </span>Soluta sequi explicabo nam harum culpa facere officiis quos eum!
     </p>
   </div>
 
