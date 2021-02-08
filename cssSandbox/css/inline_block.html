@@ -20,6 +20,16 @@
       display: block;
       margin: auto;
     }
+
+    /* inline-black  hybrid between block and inline allowing you to do margin and width and still be inline */
+    .box {
+      width: 32%;
+      display: inline-block;
+      box-sizing: border-box;
+      background: #f4f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 
@@ -30,9 +40,28 @@
     <li><a href="#">Business</a></li>
     <li><a href="#">Fashion</a></li>
   </ul>
-  <br>
-  <br>
+
+  <br><br>
+
   <img src="./img/leaf.png" alt="my image of a leaf icon">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia earum adipisci reprehenderit quis nemo
+      nostrum veritatis perspiciatis qui modi.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia earum adipisci reprehenderit quis nemo
+      nostrum veritatis perspiciatis qui modi.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia earum adipisci reprehenderit quis nemo
+      nostrum veritatis perspiciatis qui modi.</p>
+  </div>
 </body>
 
 </html>
