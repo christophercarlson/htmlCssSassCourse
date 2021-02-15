@@ -6,98 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Form Styling</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;294&display=swap" rel="stylesheet">
   <style>
     * {
       /* 
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+
+      /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. */
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
+      /* The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height. */
       background: #344a72;
+      margin-top: 40px;
+      line-height: 1.8em;
+      font-family: 'Raleway', sans-serif;
     }
 
     a {
-      /* 
-        Underlined links are ugly :)
-       */
+      text-decoration: none;
     }
 
     #container {
-      background: white;
-      border-radius: 10px;
-
-
       /* 
         -Remember, margin: auto on left and right will center a block element 
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
-        */
+      */
+
+      background: white;
+      border-radius: 7px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 400px;
+
+
+
     }
 
     .form-wrap {
 
       /* 
           This is the white area around the form and heading, etc
-        */
+      */
+      margin: 7px;
     }
 
     .form-wrap h1,
     .form-wrap p {
       /* 
           May want to center these
-        */
+      */
+      text-align: center;
+      font-weight: bold;
+      padding: 5px;
+
     }
 
     .form-wrap .form-group {
       /* 
           Each label, input is wrapped in .form-group
-        */
+      */
+
+      /* Instructor used a margin top here  */
+
+
     }
 
     .form-wrap .form-group label {
       /* 
           Label should be turned into a block element
-        */
+      */
+      display: block;
+      padding: 5px, 5px, 5px, 0;
+      margin: 3px;
+      text-align: left;
+
+
+
     }
 
     .form-wrap .form-group input {
       /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
-        */
+      */
+      width: 100%;
+      padding: 10px;
+      border: #ddd 2px solid;
+
     }
 
     .form-wrap button {
       /* 
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
-        */
+      */
+      display: block;
+      width: 100%;
+      background-color: #49c1a2;
+      padding: 7px;
+      margin-top: 20px;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
     }
 
     .form-wrap button:hover {
       /* 
           Hover background color for button is #37a08e
-        */
+      */
+      background-color: #37a08e;
+
     }
 
     .form-wrap .bottom-text {
       /* 
           Bottom text is smaller
-        */
+      */
+      font-size: 12px;
+      margin-top: 20px;
     }
 
     footer {
       /* 
         Should be centered
-       */
+      */
+      text-align: center;
     }
 
     footer a {
       /* 
           Footer link color is #49c1a2
-        */
+      */
+      color: #49c1a2;
     }
   </style>
 </head>
@@ -137,7 +185,7 @@
       </form>
     </div>
     <footer>
-      <p>Already have an account there buckaroo? <a href="#">Login Here</a></p>
+      <p>Already have an account? <a href="#">Login Here</a></p>
     </footer>
   </div>
 </body>

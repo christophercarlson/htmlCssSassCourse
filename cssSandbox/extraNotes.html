@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* targeting a specific class will override the traditional css rule of whatever is further down 
+    the text editor. */
+
+    /* If We use the important attribute we can by pass the all rules and prioritize a decoration */
+    .hello {
+      color: aliceblue;
+    }
+
+    h1 {
+      /* Will comopletely remove an element */
+      /* display: none; */
+      /* visbility will hide element but leave space where element was */
+      /* visibility: hidden; */
+      color: blue !important;
+      /* there is such a thing as negative margins, but there is no such thing as negative padding */
+      margin-top: -30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quas quidem ex illo? Ratione, veritatis?</p>
+
+</body>
+
+</html>
