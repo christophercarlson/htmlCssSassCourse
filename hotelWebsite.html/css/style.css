@@ -42,7 +42,7 @@ p{
 }
 
 .btn{
-  /* Do not want it to go all the way across, but also dont want it to be inline */
+  /* Do not want it to go all the way across, but also don't want it to be inline */
   display: inline-block;
   font-size: 18px;
   color: white;
@@ -50,7 +50,7 @@ p{
   padding: 13px 20px;
   border-radius: 3px;
   cursor: pointer;
-
+  
 }
 
 .btn:hover{
@@ -61,6 +61,21 @@ p{
 .btn-light{
   background-color: #f4f4f4;
   color: #333;
+}
+
+.bg-dark{
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light{
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary{
+  background-color: #333;
+  color: #f7c08a;
 }
 
 /* Navbar */
@@ -136,6 +151,10 @@ p{
   width: 50%;
   background: url('../img/photo-1.jpg') no-repeat;
   min-height: 100%;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
 }
 
 /* The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
