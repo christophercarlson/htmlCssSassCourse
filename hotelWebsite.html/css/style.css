@@ -18,6 +18,7 @@ a{
 }
 h1, h2, h3{
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 p{
@@ -249,13 +250,44 @@ auto - Similar to scroll, but it adds scrollbars only when necessary */
   width: 100px;
   float: left;
   margin-right: 20px;
-  padding-bottom: 15px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 #testimonials .testimonial p{
   margin-bottom: 15px;
 }
+
+/* CONTACT FORM */
+
+#contact-form .form-group{
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea { 
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+
+/* cool way to incorporate branding colors into form interaction  */
+#contact-form input:focus,
+#contact-form textarea:focus { 
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contact-form textarea{
+  height: 200px;
+}
+
+
 
 
 /* FOOTER */
